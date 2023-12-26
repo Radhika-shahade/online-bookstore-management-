@@ -1,39 +1,28 @@
-# Open/Closed Principle Example: Discount Calculator System
+# SOLID Principles Overview
 
-## Overview
+The SOLID principles are a set of five design principles that promote clean, scalable, and maintainable software architecture. These principles provide guidelines for organizing and structuring code to enhance its flexibility and readability.
 
-This example demonstrates the application of the Open/Closed Principle in a simple discount calculator system implemented in Java. The Open/Closed Principle is one of the SOLID principles of object-oriented programming, stating that a class should be open for extension but closed for modification. The goal is to allow the addition of new functionality without altering existing code.
+## Single Responsibility Principle (SRP)
 
-## Classes
+A class should have only one reason to change, meaning it should have a single responsibility or job. This principle encourages modular design, making classes easier to understand, maintain, and extend.
 
-### 1. `Book` Class
+## Open/Closed Principle (OCP)
 
-The `Book` class represents a book in the discount calculator system. It includes properties such as `title` and `price`. The class is designed with a constructor to initialize these properties, getter methods to access them, and a `setTitle` method to set or update the title.
+Software entities (classes, modules, functions) should be open for extension but closed for modification. This principle encourages the addition of new features without altering existing code, promoting code stability and ease of maintenance.
 
-### 2. `DiscountCalculator` Interface
+## Liskov Substitution Principle (LSP)
 
-The `DiscountCalculator` interface defines a contract for calculating discounts. Concrete classes implementing this interface will provide specific discount calculation logic.
+Subtypes must be substitutable for their base types without altering the correctness of the program. This principle ensures that objects of a superclass can be replaced with objects of a subclass without affecting the functionality of the program.
 
-### 3. `FictionBookDiscountCalculator` and `NonFictionBookDiscountCalculator` Classes
+## Interface Segregation Principle (ISP)
 
-These concrete classes implement the `DiscountCalculator` interface and provide specific discount calculation logic for fiction and non-fiction books, respectively.
+A class should not be forced to implement interfaces it does not use. Clients should not be forced to depend on interfaces they do not need. This principle encourages the creation of specific interfaces for distinct client needs, promoting a more modular and flexible design.
 
-### 4. `DiscountCalculatorSystem` Class
+## Dependency Inversion Principle (DIP)
 
-The `DiscountCalculatorSystem` class manages book discounts. It takes a `DiscountCalculator` as a parameter during instantiation, allowing flexibility to use different discount strategies. The `calculateDiscountedPrice` method utilizes the provided discount calculator to calculate and return the discounted price of a given book.
+High-level modules should not depend on low-level modules. Both should depend on abstractions. Additionally, abstractions should not depend on details; details should depend on abstractions. This principle promotes a decoupled and flexible codebase by relying on abstractions and dependency inversion.
 
-## Applying the Open/Closed Principle
+By adhering to the SOLID principles, developers can create software systems that are robust, scalable, and easier to maintain over time.
 
-In this example, the Open/Closed Principle is applied as follows:
 
-1. **Closed for Modification:** The `Book` class is closed for modification. Once created, the structure and behavior of the `Book` class remain unchanged. The addition of new types of books or changes in discount calculation logic does not require modifications to the `Book` class.
-
-2. **Open for Extension:** The system is open for extension. New types of books, each with its own discount calculation logic, can be introduced by creating new classes that implement the `DiscountCalculator` interface without altering existing code.
-
-## Example Usage
-
-The `Main` class demonstrates the usage of the implemented classes. It creates instances of books, discount calculators, and the discount calculator system with different discount strategies. The discounted prices are calculated and displayed for both fiction and non-fiction books.
-
-## Conclusion
-
-By adhering to the Open/Closed Principle, this example provides a flexible and extensible discount calculator system. It allows for easy addition of new book types and discount calculation strategies without the need to modify existing code.
+**Note: Examples have been provided for each SOLID principle in the accompanying codebase. Refer to the specific class descriptions for details.**
