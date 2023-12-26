@@ -1,8 +1,8 @@
-# Open/Closed Principle Example: Discount Calculator System
+# Open/Closed Principle Example: Discount Calculator Application
 
 ## Overview
 
-This example demonstrates the application of the Open/Closed Principle in a simple discount calculator system implemented in Java. The Open/Closed Principle is one of the SOLID principles of object-oriented programming, stating that a class should be open for extension but closed for modification. The goal is to allow the addition of new functionality without altering existing code.
+This example demonstrates the application of the Open/Closed Principle in a simple discount calculator Application implemented in Java. The Open/Closed Principle is one of the SOLID principles of object-oriented programming, stating that a class should be open for extension but closed for modification. The goal is to allow the addition of new functionality without altering existing code.
 
 ## Classes
 
@@ -14,13 +14,13 @@ The `Book` class represents a book in the discount calculator system. It include
 
 The `DiscountCalculator` interface defines a contract for calculating discounts. Concrete classes implementing this interface will provide specific discount calculation logic.
 
-### 3. `FictionBookDiscountCalculator` and `NonFictionBookDiscountCalculator` Classes
+### 3. `FictionalBookDiscountCalculator` and `NonFictionalBookDiscountCalculator` Classes
 
 These concrete classes implement the `DiscountCalculator` interface and provide specific discount calculation logic for fiction and non-fiction books, respectively.
 
-### 4. `DiscountCalculatorSystem` Class
+### 4. `DiscountCalculator` Class
 
-The `DiscountCalculatorSystem` class manages book discounts. It takes a `DiscountCalculator` as a parameter during instantiation, allowing flexibility to use different discount strategies. The `calculateDiscountedPrice` method utilizes the provided discount calculator to calculate and return the discounted price of a given book.
+The `DiscountCalculator` class manages book discounts. It takes a `DiscountCalculator` as a parameter during instantiation, allowing flexibility to use different discount strategies. The `calculateDiscountedPrice` method utilizes the provided discount calculator to calculate and return the discounted price of a given book.
 
 ## Applying the Open/Closed Principle
 
@@ -32,7 +32,7 @@ In this example, the Open/Closed Principle is applied as follows:
 
 ## Example Usage
 
-The `OcpApplication` class demonstrates the usage of the implemented classes. It creates instances of books, discount calculators, and the discount calculator system with different discount strategies. The discounted prices are calculated and displayed for both fiction and non-fiction books.
+The `OCPApplication` class demonstrates the usage of the implemented classes. It creates instances of books, discount calculators, and the discount calculator system with different discount strategies. The discounted prices are calculated and displayed for both fiction and non-fiction books.
 
 ## Conclusion
 

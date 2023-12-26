@@ -1,6 +1,6 @@
 package com.solidprinciple.examples.openclosedprinciple;
 
-public class OcpApplication {
+public class OCPApplication {
     public static void main(String[] args) {
         // Create a fiction book
         Book fictionBook = new Book("The Adventure", 24.99);

@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
-public class SrpApplication {
+public class SRPApplication {
     public static void main(String[] args) {
         String filePath = "src/main/resources/data/user_data.txt";
 

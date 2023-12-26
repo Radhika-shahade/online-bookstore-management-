@@ -12,11 +12,11 @@ The `FileManager` class is responsible for handling file operations. It includes
 
 ### 2. `UserDataProcessor` Class
 
-The `UserDataProcessor` class is responsible for processing user data. It includes methods to process user data, check eligibility, send a welcome email, and save data to a file.
+The `UserDataProcessor` class is responsible for processing user data. It includes methods to process user data, check eligibility, send a welcome email and save data to a file.
 
-### 3. `SrpApplication` Class
+### 3. `SRPApplication` Class
 
-The `SrpApplication` class serves as the entry point to the application. It demonstrates the usage of the `FileManager` and `UserDataProcessor` classes by accepting user input, processing user data, and interacting with the file system.
+The `SRPApplication` class serves as the entry point to the application. It demonstrates the usage of the `FileManager` and `UserDataProcessor` classes by accepting user input, processing user data, and interacting with the file system.
 
 ## Applying the Single Responsibility Principle
 
